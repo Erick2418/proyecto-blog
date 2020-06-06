@@ -1,0 +1,112 @@
+:root{
+    --colorSectionContainer:#273b47;
+    --colorfontTitle: #515151;
+    --colorBorder:#9e9e9e;
+    --colorImg: #eeeeee ;
+    --fontPrincipal:'Acme', sans-serif;
+    --fontSecondary:'Satisfy', cursive;
+}
+/*div{
+    border: 1px solid black
+}*/
+.letraSecondary{
+    font-family: var(--fontSecondary);
+}
+.letra{
+    font-family: var(--fontPrincipal);
+}
+.section-container, .btnInicio,.menu-container a{
+    background-color: var(--colorSectionContainer); 
+    color:white;
+}
+.btnInicio{
+    background-color: #ff4842;
+    padding-top: 15px;
+}
+.menu-container a:hover{
+    color:#0a56ba;
+    border-top: 2px solid #59b5b1;
+}
+.callout{
+    background-color: var(--colorImg);
+    border: none;
+    padding-bottom: 0;
+}
+h5{
+    border-top: 1px solid black;
+}
+.img{
+    height: 80vh;
+    background-size: contain;
+    padding: 0;
+}
+.cont-img{
+    position: relative;
+}
+.cont-info{
+    position: absolute;
+    background-color: rgba(215, 211, 204, 0.8);
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.title{
+    font-family: var(--fontPrincipal);
+    font-size: 1.8em;
+    border-bottom: 1px solid var(--colorBorder);
+    color: var(--colorfontTitle);
+}
+.info{
+    color: var(--colorfontTitle);
+}
+.badge{
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    font-size: 1rem;
+}
+.date{
+    margin-left: auto;
+    text-align: right;
+}
+.card-section h4{
+    border-bottom: 1px solid var(--colorBorder);
+    font-family: var(--fontPrincipal);
+    padding-bottom: 1rem;
+    color: var(--colorfontTitle);
+}
+.main-card{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--fontPrincipal);
+}
+.card{
+    width: 300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+}
+@media screen and (min-width: 1024px){
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card:nth-child(2),
+    .card:nth-child(5),
+    .card:nth-child(8),
+    .card:nth-child(11),
+    .card:nth-child(14)
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+.card img{
+    height: 40vh;
+}
+.pagination .current{
+    background-color: white;
+    color: black
+}
+.list-item{
+    background-color: var(--colorImg);
+}
